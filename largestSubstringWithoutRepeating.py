@@ -7,23 +7,29 @@ For "bbbbb" the longest substring is "b", with the length of 1.
 */
 
 
-def longest_substring_length(string):
+def longest_substring_length(string, counter):
 	l= len(string)
 	list1=[]
 	for i in string:
 		s=''
 		s+=i
-		#list1=[]
-		for j in range(0,l):
+		for j in range(counter, l):
 			j+=1
+			if (j== l):
+				break
 			if(string[j] in s):
 				break
 			else:
 				s+=string[j]
+		counter+=1
 		list1.append(s)
-
 	longest_substring= (max(list1, key=len))
 	length= len(longest_substring)
-	print ("longest substring is " + longest_substring +" and it's length is " + str(length) )
+	print ("longest substring is " + longest_substring +" and it's length is " + str(length))
 
-longest_substring_length("abcdefghiijklmhbhncjdskbfksfjdnvbiyufgu")
+the_string= input("string you want to check...")
+counter=0
+longest_substring_length(the_string, counter)
+
+
+
