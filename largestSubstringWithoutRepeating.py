@@ -27,7 +27,7 @@ def longest_substring_length(string, counter):
 	length= len(longest_substring)
 	print ("longest substring is " + longest_substring +" and it's length is " + str(length))
 
-the_string= input("string you want to check...")
+the_string= input("string you want to check...") #please type the string as "string", don't forget the ""
 counter=0
 longest_substring_length(the_string, counter)
 
