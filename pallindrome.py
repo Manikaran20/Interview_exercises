@@ -11,9 +11,9 @@ def pallindrome(string):
 			flag=False
 
 	if(flag==True):
-		print("pallindrome")
+		print("Pallindrome")
 	else:
-		print("not a pallindrome")
+		print("Not a Pallindrome")
 
 
 pallindrome("mabaabm")
