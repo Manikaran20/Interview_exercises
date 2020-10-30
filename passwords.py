@@ -6,14 +6,13 @@ import random
 import re
 import sys
 
-#
+
 # Complete the 'passwordCracker' function below.
-#
 # The function is expected to return a STRING.
 # The function accepts following parameters:
 #  1. STRING_ARRAY passwords
 #  2. STRING loginAttempt
-#
+
 
 def passwordCracker(passwords, loginAttempt):
     l1=len(passwords)
